@@ -1,0 +1,24 @@
+.main {
+    flex: 1;
+}
+
+.main > .container {
+    height: 100%;
+}
+
+.main__row-title-section {
+    margin-top: 6.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__row-title-section > h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.main__row-title-section > span {
+    font-size: 1.6rem;
+    color: var(--gray-300);
+}
