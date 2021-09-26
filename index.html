@@ -10,11 +10,11 @@
             href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="./css/colors.css">
-        <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/global.css">
-        <link rel="stylesheet" href="./css/header.css">
-        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/colors.css" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/global.css" />
+        <link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/main.css" />
         <title>JServices</title>
     </head>
     <body class="body">
@@ -33,16 +33,87 @@
                 </div>
                 <div class="main__row-tabs">
                     <div data-id="tabs-area" class="main__row-tabs__content">
-                        <button data-id="tab-service-in-progress" class="main__row-tabs__tab main__row-tabs__tab--active">Em andamento(6)</button>
-                        <button data-id="tab-service-finished" class="main__row-tabs__tab">Finalizados(3)</button>
-                        <div data-id="line-tab" class="main__row-tabs-line main__row-tabs-line--left"></div>
+                        <button
+                            data-id="tab-service-in-progress"
+                            class="
+                                main__row-tabs__tab main__row-tabs__tab--active
+                            "
+                        >
+                            Em andamento(6)
+                        </button>
+                        <button
+                            data-id="tab-service-finished"
+                            class="main__row-tabs__tab"
+                        >
+                            Finalizados(3)
+                        </button>
+                        <div
+                            data-id="line-tab"
+                            class="
+                                main__row-tabs-line main__row-tabs-line--left
+                            "
+                        ></div>
                     </div>
                 </div>
-                <section class="main__list-services">
-                    <ul data-id="datalist-services-in-progress">
-                        <li>Em andamento</li>
+                <section class="main__services">
+                    <ul
+                        data-id="datalist-services-in-progress"
+                        class="list-services"
+                    >
+                        <li class="list-services__item">
+                            <article class="card-service--in-progress">
+                                <div class="card-service__content">
+                                    <h3 class="card-service__title">
+                                        Manutenção e Limpeza de Split LG
+                                    </h3>
+                                    <p class="card-service__description">
+                                        É preciso realizar a limpeza e a
+                                        manutenção de um ar-condicionado da LG
+                                        12000 btus modelo 2015. O serviço será
+                                        em domicílio, no seguinte endereço...
+                                    </p>
+                                    <div class="card-service__tags">
+                                        <span class="card-service__tags__tag"
+                                            >01/01/2022</span
+                                        >
+                                        <span class="card-service__tags__tag"
+                                            >R$150,00</span
+                                        >
+                                    </div>
+                                </div>
+                                <footer class="card-service__actions">
+                                    <a
+                                        href="#"
+                                        class="
+                                            card-service__actions__link
+                                            card-service__actions__link--details
+                                        "
+                                        >Detalhes</a
+                                    >
+                                    <a
+                                        href="#"
+                                        class="
+                                            card-service__actions__link
+                                            card-service__actions__link--finished
+                                        "
+                                        >Finalizar</a
+                                    >
+                                    <a
+                                        href="#"
+                                        class="
+                                            card-service__actions__link
+                                            card-service__actions__link--delete
+                                        "
+                                        >Deletar</a
+                                    >
+                                </footer>
+                            </article>
+                        </li>
                     </ul>
-                    <ul data-id="datalist-services-finished" class="gone">
+                    <ul
+                        data-id="datalist-services-finished"
+                        class="gone list-services"
+                    >
                         <li>Finalizados</li>
                     </ul>
                 </section>
