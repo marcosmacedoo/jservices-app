@@ -1,0 +1,9 @@
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: min(121.6rem, 85vw);
+    margin: 0 auto;
+}
