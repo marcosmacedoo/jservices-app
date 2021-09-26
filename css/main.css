@@ -2,10 +2,6 @@
     flex: 1;
 }
 
-.main > .container {
-    height: 100%;
-}
-
 .main__row-title-section {
     margin-top: 6.4rem;
     display: flex;
