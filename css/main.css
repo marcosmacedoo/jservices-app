@@ -76,35 +76,48 @@
     margin-top: 7.2rem;
 }
 
+.list-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(39rem, 1fr));
+    gap: 2.4rem 1.6rem;
+}
+
 .card-service--in-progress {
-    max-width: 39rem;
-    /* height: 24rem; */
+    display: flex;
+    flex-direction: column;
     background: var(--white-100);
     border-radius: 0.4rem;
     animation: show 0.5s linear;
 }
 
 .card-service__content {
-    padding: 1.6rem 2.4rem 2rem 2.4rem;
+    flex: 1;
+    padding: 2rem 2.4rem 2rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
 }
 
 .card-service__title {
+    flex: 1;
     font-size: 2rem;
     font-weight: 500;
     color: var(--black-200);
 }
 
 .card-service__description {
-    margin-top: 1.2rem;
-    max-height: 35rem;
+    /* margin-top: 1.2rem; */
+    flex: 1;
+    /* max-height: 35rem; */
     color: var(--gray-500);
     font-size: 1.4rem;
     font-weight: 400;
-    line-height: 2.3rem;
+    line-height: 2rem;
 }
 
 .card-service__tags {
-    margin-top: 2rem;
+    flex: 1;
+    /* margin-top: 2rem; */
     display: flex;
     gap: 1.6rem;
 }
