@@ -78,11 +78,11 @@
 
 .list-services {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(39rem, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2.4rem 1.6rem;
 }
 
-.card-service--in-progress {
+.card-service {
     display: flex;
     flex-direction: column;
     background: var(--white-100);
@@ -106,9 +106,7 @@
 }
 
 .card-service__description {
-    /* margin-top: 1.2rem; */
     flex: 1;
-    /* max-height: 35rem; */
     color: var(--gray-500);
     font-size: 1.4rem;
     font-weight: 400;
@@ -117,7 +115,6 @@
 
 .card-service__tags {
     flex: 1;
-    /* margin-top: 2rem; */
     display: flex;
     gap: 1.6rem;
 }
