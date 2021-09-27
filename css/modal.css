@@ -1,0 +1,81 @@
+.modal {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: grid;
+    place-content: center;
+}
+
+.modal__container {
+    padding: 4rem 6.4rem;
+    border-radius: 0.4rem;
+    background: var(--white-300);
+    animation: show 0.3s linear;
+}
+
+.modal__container__title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--black-300);
+}
+
+.modal__container__form {
+    margin-top: 3.2rem;
+    width: min(70rem, 80vw);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.modal__container__form__input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.modal__container__form__input-group__label {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--gray-600);
+}
+
+.modal__container__form__input-group__input {
+    padding: 1.4rem 1.6rem;
+    font-size: 1.6rem;
+    color: var(--gray-800);
+}
+
+
+.modal__container__form__input-group__input::placeholder {
+    color: var(--gray-100);
+}
+
+.modal__container__form__row-input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.4rem;
+}
+
+.modal__container__form__buttons {
+    margin-top: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.6rem;
+}
+
+.modal__container__form__buttons__button--secondary {
+    width: 13.2rem;
+    height: 4.4rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    color: var(--blue-500);
+    background: transparent;
+    border-radius: 0.4rem;
+    border: 1px solid var(--blue-500);
+}

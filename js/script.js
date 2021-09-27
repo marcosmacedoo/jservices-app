@@ -10,12 +10,12 @@ const dataListServicesFinished = document.querySelector(
 const childesTabsArea = Array.from(tabsArea.children);
 
 tabsArea.addEventListener("click", (event) => {
-    if (event.target.localName !== 'button') {
-        return
+    if (event.target.localName !== "button") {
+        return;
     }
 
     const tabClicked = event.target;
-    console.log(tabClicked)
+    console.log(tabClicked);
     const dataIdTabClicked = tabClicked.getAttribute("data-id");
     const [tabNotClicked] = childesTabsArea.filter(
         (child) =>
@@ -51,3 +51,19 @@ tabsArea.addEventListener("click", (event) => {
     !tabClicked.classList.contains("main__row-tabs__tab--active") &&
         tabClicked.classList.add("main__row-tabs__tab--active");
 });
+
+const buttonRegistrationService = document.querySelector(
+    "[data-id=button-open-modal-registration-service]"
+);
+const buttonCancelModal = document.querySelector('[data-id=button-cancel-modal]')
+const modalRegistrationService = document.querySelector("[data-id=modal]");
+const { body } = document;
+
+buttonRegistrationService.addEventListener("click", (event) => {
+    modalRegistrationService.classList.remove("gone");
+    body.classList.toggle("not-scroll");
+});
+
+buttonCancelModal.addEventListener('click', (event) => {
+    modalRegistrationService.classList.add('gone')
+})

@@ -26,9 +26,13 @@ button, a {
     cursor: pointer;
 }
 
-button, input {
+button, input, textarea {
     border: 0;
     outline: 0;
+}
+
+textarea {
+    resize: none;
 }
 
 a {

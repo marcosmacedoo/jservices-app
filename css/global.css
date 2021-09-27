@@ -15,3 +15,7 @@
     left: -999px;
     visibility: hidden;
 }
+
+.not-scroll {
+    overflow-y: hidden;
+}

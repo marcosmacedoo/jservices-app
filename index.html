@@ -11,11 +11,13 @@
             href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="./css/colors.css" />
         <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/colors.css" />
         <link rel="stylesheet" href="./css/global.css" />
+        <link rel="stylesheet" href="./css/animates.css" />
         <link rel="stylesheet" href="./css/header.css" />
         <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/modal.css" />
 
         <title>JServices</title>
     </head>
@@ -23,7 +25,12 @@
         <header class="header">
             <div class="container header__content">
                 <h2 class="header__title">JServices</h2>
-                <button class="header__button">Cadastre Serviço</button>
+                <button
+                    data-id="button-open-modal-registration-service"
+                    class="header__button"
+                >
+                    Cadastre Serviço
+                </button>
             </div>
         </header>
 
@@ -492,6 +499,98 @@
                 </section>
             </div>
         </main>
+
+        <div data-id="modal" class="modal gone">
+            <div class="modal__container">
+                <h2 class="modal__container__title">Cadastrar Serviço</h2>
+                <form class="modal__container__form">
+                    <div class="modal__container__form__input-group">
+                        <label
+                            class="modal__container__form__input-group__label"
+                            for="input-title"
+                            >Título</label
+                        >
+                        <input
+                            class="modal__container__form__input-group__input"
+                            type="text"
+                            id="input-title"
+                            name="input-title"
+                            placeholder="Ex: Manutenção de notebook"
+                            required
+                        />
+                    </div>
+                    <div class="modal__container__form__input-group">
+                        <label
+                            class="modal__container__form__input-group__label"
+                            for="input-description"
+                            >Descrição (Opcional)</label
+                        >
+                        <textarea
+                            class="modal__container__form__input-group__input"
+                            name="input-description"
+                            id="input-description"
+                            cols="30"
+                            rows="6"
+                            placeholder="Ex: A manutenção é a parcial, ou seja, somente am alguns componentes como SSD, memória RAM e processador serão reparados"
+                        ></textarea>
+                    </div>
+                    <div class="modal__container__form__row-input">
+                        <div class="modal__container__form__input-group">
+                            <label
+                                class="
+                                    modal__container__form__input-group__label
+                                "
+                                for="input-budget"
+                                >Orçamento</label
+                            >
+                            <input
+                                id="input-budget"
+                                name="input-budget"
+                                class="
+                                    modal__container__form__input-group__input
+                                "
+                                type="number"
+                                placeholder="Ex: 79.90"
+                                min="0"
+                                required
+                            />
+                        </div>
+                        <div class="modal__container__form__input-group">
+                            <label
+                                class="
+                                    modal__container__form__input-group__label
+                                "
+                                for="input-deadline"
+                                >Prazo</label
+                            >
+                            <input
+                                class="
+                                    modal__container__form__input-group__input
+                                "
+                                id="input-deadline"
+                                name="input-deadline"
+                                type="date"
+                                required
+                            />
+                        </div>
+                    </div>
+                    <div class="modal__container__form__buttons">
+                        <button
+                            data-id="button-cancel-modal"
+                            type="reset"
+                            class="
+                                modal__container__form__buttons__button--secondary
+                            "
+                        >
+                            Cancelar
+                        </button>
+                        <button class="header__button" type="submit">
+                            Cadastrar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
 
         <script src="./js/script.js"></script>
     </body>
