@@ -1,16 +1,19 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
 html {
-    font-size: 63.5%;
+    font-size: 62.5%;
 }
 
 body {
@@ -22,11 +25,14 @@ li {
     list-style: none;
 }
 
-button, a {
+button,
+a {
     cursor: pointer;
 }
 
-button, input, textarea {
+button,
+input,
+textarea {
     border: 0;
     outline: 0;
 }
