@@ -55,15 +55,20 @@ tabsArea.addEventListener("click", (event) => {
 const buttonRegistrationService = document.querySelector(
     "[data-id=button-open-modal-registration-service]"
 );
-const buttonCancelModal = document.querySelector('[data-id=button-cancel-modal]')
+const buttonCancelModal = document.querySelector(
+    "[data-id=button-cancel-modal]"
+);
 const modalRegistrationService = document.querySelector("[data-id=modal]");
+const modalContainer = document.querySelector(".modal__container");
 const { body } = document;
 
 buttonRegistrationService.addEventListener("click", (event) => {
+    modalContainer.classList.remove("gone");
     modalRegistrationService.classList.remove("gone");
     body.classList.toggle("not-scroll");
 });
 
-buttonCancelModal.addEventListener('click', (event) => {
-    modalRegistrationService.classList.add('gone')
-})
+buttonCancelModal.addEventListener("click", (event) => {
+    modalRegistrationService.classList.add("gone");
+    modalContainer.classList.add("gone");
+});
