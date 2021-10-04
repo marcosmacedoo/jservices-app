@@ -39,28 +39,41 @@
                     <span>6 de 9 serviços</span>
                 </div>
                 <div class="main__row-tabs">
-                    <div data-id="tabs-area" class="main__row-tabs__content">
-                        <button
-                            data-id="tab-service-in-progress"
-                            class="
-                                main__row-tabs__tab main__row-tabs__tab--active
-                            "
-                        >
-                            Em andamento(6)
-                        </button>
-                        <button
-                            data-id="tab-service-finished"
-                            class="main__row-tabs__tab"
-                        >
-                            Finalizados(3)
-                        </button>
+                    <ul data-id="tabs-area" class="main__row-tabs__content">
+                        <li>
+                            <button
+                                data-id="tab-service-in-progress"
+                                class="
+                                    main__row-tabs__tab
+                                    main__row-tabs__tab--active
+                                "
+                            >
+                                Em andamento(6)
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                data-id="tab-service-finished"
+                                class="main__row-tabs__tab"
+                            >
+                                Finalizados(3)
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                data-id="tab-service-canceled"
+                                class="main__row-tabs__tab"
+                            >
+                                Cancelados(1)
+                            </button>
+                        </li>
                         <div
                             data-id="line-tab"
                             class="
                                 main__row-tabs-line main__row-tabs-line--left
                             "
                         ></div>
-                    </div>
+                    </ul>
                 </div>
                 <section class="main__services">
                     <ul
@@ -499,7 +512,7 @@
         </main>
 
         <div data-id="modal" class="modal gone">
-            <div class="modal__container gone">
+            <div class="modal__container">
                 <h2 class="modal__container__title">Cadastrar Serviço</h2>
                 <form class="modal__container__form">
                     <div class="modal__container__form__input-group">
@@ -574,13 +587,13 @@
                     </div>
                     <div class="modal__container__form__buttons">
                         <button
-                            data-id="button-cancel-modal"
+                            data-id="button-close-modal-registration-service"
                             type="reset"
                             class="
                                 modal__container__form__buttons__button--secondary
                             "
                         >
-                            Cancelar
+                            Fechar
                         </button>
                         <button class="header__button" type="submit">
                             Cadastrar
@@ -590,6 +603,6 @@
             </div>
         </div>
 
-        <script src="./js/script.js"></script>
+        <script type="module" src="./js/App.js"></script>
     </body>
 </html>
