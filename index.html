@@ -514,7 +514,10 @@
         <div data-id="modal" class="modal gone">
             <div class="modal__container">
                 <h2 class="modal__container__title">Cadastrar Serviço</h2>
-                <form class="modal__container__form">
+                <form
+                    data-id="form-registration-service"
+                    class="modal__container__form"
+                >
                     <div class="modal__container__form__input-group">
                         <label
                             class="modal__container__form__input-group__label"
@@ -524,10 +527,10 @@
                         <input
                             class="modal__container__form__input-group__input"
                             type="text"
+                            data-id="input-title"
                             id="input-title"
                             name="input-title"
                             placeholder="Ex: Manutenção de notebook"
-                            required
                         />
                     </div>
                     <div class="modal__container__form__input-group">
@@ -539,6 +542,7 @@
                         <textarea
                             class="modal__container__form__input-group__input"
                             name="input-description"
+                            data-id="input-description"
                             id="input-description"
                             cols="30"
                             rows="6"
@@ -556,6 +560,7 @@
                             >
                             <input
                                 id="input-budget"
+                                data-id="input-budget"
                                 name="input-budget"
                                 class="
                                     modal__container__form__input-group__input
@@ -563,7 +568,7 @@
                                 type="number"
                                 placeholder="Ex: 79.90"
                                 min="0"
-                                required
+                                step=".01"
                             />
                         </div>
                         <div class="modal__container__form__input-group">
@@ -579,9 +584,9 @@
                                     modal__container__form__input-group__input
                                 "
                                 id="input-deadline"
+                                data-id="input-deadline"
                                 name="input-deadline"
                                 type="date"
-                                required
                             />
                         </div>
                     </div>

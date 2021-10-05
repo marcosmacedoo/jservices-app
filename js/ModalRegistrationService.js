@@ -2,13 +2,13 @@ import dataIds from './dataIds.js'
 
 export function ModalRegistrationService() {
     const $modal = document.querySelector(
-        `[data-id=${dataIds.modalRegistrationService}]`
+        `[data-id=${dataIds.modalResgistrationService.modal}]`
     )
     const $buttonOpenModalRegistrationService = document.querySelector(
-        `[data-id=${dataIds.buttonOpenModalRegistrationService}]`
+        `[data-id=${dataIds.modalResgistrationService.buttonOpenModalRegistrationService}]`
     )
     const $buttonCloseModalRegistrationService = document.querySelector(
-        `[data-id=${dataIds.buttonCloseModalRegistrationService}]`
+        `[data-id=${dataIds.modalResgistrationService.buttonCloseModalRegistrationService}]`
     )
 
     const open = () => $modal.classList.remove('gone')
